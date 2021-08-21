@@ -1,0 +1,24 @@
+{
+  "name": "videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start_client": "npm start --prefix front",
+    "start_node": "nodemon index.js",
+    "start_dev": "concurrently \"npm run start_node\" \"npm run start_client\" ",
+    "postinstall": "npm install --prefix front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/Andreoew/videos.git"
+  },
+  "author": "André de Souza",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
